@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- Form -->
+
+	<form>
+		<div class="form__block">
+			
+			<!-- Header -->
+
+			<div class="form__header">
+				<div class="header__column-wrap">
+					<div class="header__column-left">
+						<h2 class="header__title">Harold Finch</h2>
+						<p class="header__subtitle">your total</p>
+					</div>
+					<div class="header__column-right">
+						<p class="header__price">$88</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- ./Header -->
+
+			<!-- Form items -->
+
+			<div class="form__wrap">
+				
+				<div class="form__item">
+					<label for="card-number" class="form__label">Credit card number</label>
+					<input type="text" class="input-place card-number" name="card-number" id="card-number" pattern="[0-9]{16,16}" title="enter a 16-digit number" >
+				</div>
+				
+				<div class="form__item">
+					<label for="month" class="form__label">Expiration date</label>
+					<select name="month" id="month" class="input-place month" title="select month">
+						<option value="Month"" selected>Month</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+						<option value="January">January</option>
+					</select>
+					<select name="year" id="year" class="input-place year" title="select year">
+						<option value="year" selected>Year</option>
+						<option value="2017" >2017</option>
+						<option value="2018">2018</option>
+					</select>
+				</div>
+				
+				<div class="form__item">
+					<label for="cvv" class="form__label">CVV</label>
+					<input type="password" class="input-place cvv" name="cvv" id="cvv" pattern="[0-9]{3,4}" title="enter a 3 or 4-digit number">
+					<p class="comment">3 or 4 digits - 
+						<a href="#" class="example__link" title="Нажмите чтоб открыть пример">view example</a>
+					</p>
+				</div>
+				
+				<div class="button__block">
+					<button name="submit" class="button__pay"><span class="button__title">Pay</a></button>
+					<a href="#" class="cancel__link" title="Нажмите чтоб закрыть">Cancel order</a>
+				</div>
+
+			</div>
+
+			<!-- ./Form items -->
+
+		</div>
+	</form>
+
+	<!-- ./Form -->
+
+</body>
+</html>
